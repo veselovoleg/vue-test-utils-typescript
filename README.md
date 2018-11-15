@@ -61,3 +61,7 @@ npm run build
 # run tests
 npm test
 ```
+
+###E2E
+
+# https://medium.com/js-dojo/end-to-end-testing-a-vuejs-hackernews-clone-23b9415fd5c5
