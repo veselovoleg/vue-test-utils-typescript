@@ -4,13 +4,16 @@
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
+    "experimentalDecorators": true,
     "importHelpers": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
-      "node"    ],
+      "node",
+      "jasmine"
+    ],
     "paths": {
       "@/*": [
         "src/*"
