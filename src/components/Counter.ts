@@ -11,7 +11,7 @@ export default class Counter extends Vue{
      * 
      **/
     increment(){
-        this.count++
+        this.count++ 
     }  
 }
 

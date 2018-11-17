@@ -2,17 +2,23 @@
   "name": "vue-test-utils-typescript-example",
   "version": "0.1.0",
   "private": true,
+  "watch": {
+    "test": "npm run test:unit"
+  },
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test": "npm run test:unit",
-    "test:unit": "jest"
+    "test:unit": "jest",
+    "cypress": "$(npm bin)/cypress open",
+    "watch": "npm-watch"
   },
   "dependencies": {
     "@types/jasmine": "^2.8.11",
     "@types/jest": "^23.3.9",
     "@types/mocha": "^5.2.5",
+    "npm-watch": "^0.4.0",
     "vue": "^2.5.16",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^7.0.0"
@@ -22,6 +28,7 @@
     "@vue/cli-plugin-typescript": "^3.0.0-rc.9",
     "@vue/cli-service": "^3.0.0-rc.9",
     "@vue/test-utils": "^1.0.0-beta.25",
+    "axios": "^0.18.0",
     "cypress": "^3.1.1",
     "jest": "^23.4.2",
     "jest-serializer-vue": "^2.0.2",
@@ -53,6 +60,6 @@
       "^.+\\.tsx?$": "ts-jest"
     },
     "testURL": "http://localhost/",
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$"
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx?)$"
   }
 }

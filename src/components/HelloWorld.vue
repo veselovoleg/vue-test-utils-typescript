@@ -5,6 +5,7 @@
     <ul>
       <li v-for="number in 30" :key="number" class="list-item">{{ number }}</li>
     </ul>
+    <todo-list />
   </div>
 </template>
 
